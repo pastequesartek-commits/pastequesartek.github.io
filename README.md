@@ -19,8 +19,8 @@
 <canvas id="canvas"></canvas>
 
 <script>
-const API_KEY = "TA_API_KEY";
-const MODEL = "NOM_DU_PROJET";
+const API_KEY = "6mVMfzMgUEMfEVrcl0HN";
+const MODEL = "project-garbage/1";
 const VERSION = "3";
 
 const video = document.getElementById("video");
