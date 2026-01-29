@@ -21,7 +21,7 @@
 <script>
 const API_KEY = "6mVMfzMgUEMfEVrcl0HN";
 const MODEL = "project-garbage/1";
-const VERSION = "3";
+// const VERSION = "3";
 
 const video = document.getElementById("video");
 const canvas = document.getElementById("canvas");
@@ -53,7 +53,8 @@ async function runInference() {
     formData.append("file", blob);
 
     const res = await fetch(
-      `https://detect.roboflow.com/${MODEL}/${VERSION}?api_key=${API_KEY}`,
+      //`https://detect.roboflow.com/${MODEL}/${VERSION}?api_key=${API_KEY}`,
+      `https://detect.roboflow.com/${MODEL}?api_key=${API_KEY}`,
       { method: "POST", body: formData }
     );
 
